@@ -4,19 +4,24 @@
 
 int main(){
 
-    int age =18;
+    int i=0;
     std::string name = "Deepak";
-    float percentage=94.6;
-    double mark = 236;
-    char grade = 'A';
+    
+    // std::cout<<name.length()<<std::endl;
 
-    //cout - console out 
-    //endl - end the line
-   std::cout << "Hello World !"<<std::endl;
-   std::cout << "Hai, My name is "<<name<<std::endl;
-   std::cout <<"Age is "<<age<<std::endl;
-   std::cout <<"I have scored "<<mark <<" In An exam,"<<std::endl;
-   std::cout << "With Percentage "<<percentage<<" and Grade "<<grade<<std::endl;
-   // cout << "Hello World !"<<endl;
+    // for(i=0;name[i]!='\0';i++){
+
+    //      std::cout<<name[i]<<std::endl;
+    // }
+
+    //std::cout<<name.find("pak",0); //--->for finding a char or string 
+    //an string . 2 parameter string or char and starting index
+
+    //for searching substring.
+    //also takes two parameters where to start and how many character
+    std::string subName = name.substr(3,3);
+    std::cout<< subName;
+
+    
     return 0;
 }
